@@ -54,7 +54,7 @@ a {
 }
 
 .topnav a.active {
-    font-weight: bold;
+    font-weight: 600;
     color: white;
 }
 
@@ -72,27 +72,28 @@ a {
 
 /*Main*/
 
+/*Titulos*/
 h1 {
-    font-weight: 600;
     padding: 50px 0 30px 0;
-}
-
-.izq {
-    animation-name: izq;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    position: relative;
-}
-@keyframes izq {
-    from { left: -500px;;}
-    to {left: 0;
-}
 }
 
 h2 {
     padding-bottom: 20px;
 }
 
+/*Animación de los títulos*/
+.izq {
+    animation-name: izq;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    position: relative;
+}
+
+@keyframes izq {
+    from { left: -500px;;}
+    to {left: 0;
+}
+}
 
 /*Footer*/
 
@@ -115,6 +116,7 @@ h5 {
     padding: 5px;
     font-size: 13px;
 }
+
 h4 {
     padding: 18px 5px 5px 5px;
     font-size: 16px;
@@ -162,13 +164,24 @@ input[type=submit]{
     text-align: center;
     position: absolute;
     color:  white;
-    font-size:40pt;
-    margin: 200px;
-    left: 10%;
+    font-size:84pt;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    top: 25%;
+    animation-name: inicio;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes inicio {
+    0% {color: rgba(255, 255, 255, 0);}
+    100% {color: white;}
 }
 
 
 /*Conocenos*/
+/*Se aplica a casi todas las imagenes del sitio*/
 .imagen_cuadrada {
     width: 300px;
     padding-bottom: 50px;
@@ -177,6 +190,8 @@ input[type=submit]{
 .parrafo {
     font-size: 14pt;
 }
+
+
 /*Adoptables*/
 
 .banner2 {
@@ -321,8 +336,8 @@ input[type=submit]{
     }
     .titulo_index {
         font-size: 25pt;
-        left: -40%;
-        top: -150px;
+        left: 10%;
+        top: 25%;
         width: 80%;
     }
     /*Quizz*/
